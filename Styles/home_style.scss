@@ -1,0 +1,56 @@
+
+body {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #569C87;
+    font-family: Arial;
+}
+
+#title {
+    height: 100px;
+    text-align: center;
+    color: #f1c74b;
+    padding-top: 50px;
+    font-size: 50px;
+}
+.green_div {
+    background-color: #569C87;
+}
+
+h2 {
+    margin: 0px;
+}
+
+#mentions {
+    text-align: left;
+}
+
+#contact {
+    text-align: right;
+}
+
+.content {
+    text-align: center;
+}
+
+@font-face {
+    font-family: "Campton";
+    src: url("Campton-BoldDEMO.otf");
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0;
+    }
+}
