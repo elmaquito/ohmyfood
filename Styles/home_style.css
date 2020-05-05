@@ -3,32 +3,55 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
+  margin-bottom: 0px;
+  height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
 }
 
 header {
   background-color: #569C87;
   font-family: Arial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
 }
 
 #title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100px;
-  text-align: center;
   color: #f1c74b;
-  padding-top: 50px;
-  font-size: 50px;
+  font-size: 35px;
+  margin: auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .green_div {
   background-color: #569C87;
-}
-
-h2 {
-  margin: 0px;
 }
 
 #mentions {
@@ -43,15 +66,77 @@ h2 {
   text-align: center;
 }
 
+#btn_main {
+  height: 30px;
+  width: 25%;
+  color: #f1c74b;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 16px;
+}
+
+.menus_left {
+  margin-left: auto;
+  margin-right: 20px;
+  height: 200px;
+  width: 150px;
+  -webkit-box-shadow: 0px 0px 4px 0px lightgrey;
+          box-shadow: 0px 0px 4px 0px lightgrey;
+}
+
+.menus_right {
+  margin-right: auto;
+  margin-left: 20px;
+  height: 200px;
+  width: 150px;
+  -webkit-box-shadow: 0px 0px 4px 0px lightgrey;
+          box-shadow: 0px 0px 4px 0px lightgrey;
+}
+
+.rows {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 220px;
+  margin-bottom: 0px;
+}
+
+#la_note_enchantee {
+  background-color: #fbdcdb;
+  font-family: "Campton";
+}
+
+#chic_francaise {
+  background-color: #fbf3fb;
+}
+
+#delices_papilles {
+  background-color: #f9f9f9;
+}
+
+#palette_gout {
+  background-color: #fdfffc;
+}
+
 @font-face {
   font-family: "Campton";
-  src: url("Campton-BoldDEMO.otf");
+  src: url("../Polices/Campton-BoldDEMO.otf");
 }
 
 @media screen and (max-width: 768px) {
   body {
     width: 100%;
     margin: 0;
+  }
+  footer {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=home_style.css.map */
