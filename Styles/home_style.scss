@@ -1,6 +1,6 @@
 
 body {
-    width: 50%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
@@ -11,17 +11,30 @@ body {
 html {
     height: 100%;
 }
+
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: none;
+}
 .container{
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
 // header 
 header {
     background-color: #569C87;
     font-family: Arial;
     display: flex;
     font-weight: bold;
+    justify-content: center;
 }
 
 #title {
@@ -36,25 +49,42 @@ header {
 footer {
     position: fixed;
     bottom: 0;
-    color: white;
-    text-align: center;
-    width: 50%;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    align-items: center;
 }
+
+
 .green_div {
     background-color: #569C87;
+    color:#f1c74b;
+    width: 100%;
 }
 
 #mentions {
-    text-align: left;
+    justify-content: flex-start;
 }
 
 #contact {
-    text-align: right;
+   justify-content: flex-end;
 }
 
 .content {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+}
+
+.content_center {
+    display: flex;
+    margin: auto;
+}
+
+.centered {
+    background-color: #F8BBD0;
 }
 
 #btn_main{
@@ -64,6 +94,10 @@ footer {
     border-radius: 10px;
     border: 0px;
     font-size: 16px;
+}
+.menus {
+    justify-content: center;
+    align-items: center;
 }
 .menus_left {
     margin-left: auto;    
