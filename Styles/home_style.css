@@ -7,7 +7,21 @@ body {
   height: 100%;
 }
 
-html {
+.green_div {
+  background-color: #569C87;
+  color: #f1c74b;
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
 }
 
@@ -31,6 +45,134 @@ a:visited {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menus_left {
+  margin-left: auto;
+  margin-right: 20px;
+  height: 200px;
+  width: 150px;
+  -webkit-box-shadow: 0px 0px 4px 0px lightgrey;
+          box-shadow: 0px 0px 4px 0px lightgrey;
+}
+
+.menus_right {
+  margin-right: auto;
+  margin-left: 20px;
+  height: 200px;
+  width: 150px;
+  -webkit-box-shadow: 0px 0px 4px 0px lightgrey;
+          box-shadow: 0px 0px 4px 0px lightgrey;
+}
+
+.rows {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 220px;
+  margin-bottom: 0px;
+}
+
+.menus_title {
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.menus_menus {
+  margin: 0px;
+  font-family: "street";
+}
+
+#la_note_enchantee {
+  background-color: #fbdcdb;
+}
+
+#la_note_enchantee h2 {
+  font-family: "Devonshire";
+}
+
+.la_note_enchantee_color {
+  color: #4f252a;
+}
+
+#la_note_enchantee i {
+  color: #f04e5f;
+  background: -webkit-linear-gradient(#f04e5f, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#chic_francaise {
+  background-color: #fbf3fb;
+  font-family: "Croissantone";
+  color: #c77412;
+}
+
+.chic_francaise_color {
+  color: #de8621;
+  background: -webkit-linear-gradient(left, #de8621, #905cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10px;
+}
+
+#delices_papilles {
+  background-color: #f9f9f9;
+  font-family: "dancing";
+  color: #2897fb;
+}
+
+.delices_papilles_color {
+  color: #0633df;
+  background: -webkit-linear-gradient(left, #0633df, #2897fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#palette_gout {
+  background-color: #fdfffc;
+  font-family: "kaushanscript";
+  color: #4ea043;
+}
+
+.palette_gout_color {
+  color: #4ea043;
+  background: -webkit-linear-gradient(left, #4ea043, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#btn_main {
+  height: 30px;
+  width: auto;
+  color: #f1c74b;
+  border-radius: 6px;
+  border: 0px;
+  font-size: 16px;
 }
 
 header {
@@ -74,34 +216,18 @@ footer {
           align-items: center;
 }
 
-.green_div {
-  background-color: #569C87;
-  color: #f1c74b;
-  width: 100%;
-}
-
 #mentions {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-left: 10px;
 }
 
 #contact {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-.content {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
+  margin-right: 10px;
 }
 
 .content_center {
@@ -115,77 +241,34 @@ footer {
   background-color: #F8BBD0;
 }
 
-#btn_main {
-  height: 30px;
-  width: 25%;
-  color: #f1c74b;
-  border-radius: 10px;
-  border: 0px;
-  font-size: 16px;
-}
-
-.menus {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.menus_left {
-  margin-left: auto;
-  margin-right: 20px;
-  height: 200px;
-  width: 150px;
-  -webkit-box-shadow: 0px 0px 4px 0px lightgrey;
-          box-shadow: 0px 0px 4px 0px lightgrey;
-}
-
-.menus_right {
-  margin-right: auto;
-  margin-left: 20px;
-  height: 200px;
-  width: 150px;
-  -webkit-box-shadow: 0px 0px 4px 0px lightgrey;
-          box-shadow: 0px 0px 4px 0px lightgrey;
-}
-
-.rows {
-  padding-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 220px;
-  margin-bottom: 0px;
-}
-
-#la_note_enchantee {
-  background-color: #fbdcdb;
-  font-family: "Campton";
-}
-
-#chic_francaise {
-  background-color: #fbf3fb;
-}
-
-#delices_papilles {
-  background-color: #f9f9f9;
-}
-
-#palette_gout {
-  background-color: #fdfffc;
-}
-
 @font-face {
   font-family: "Campton";
   src: url("../Polices/Campton-BoldDEMO.otf");
+}
+
+@font-face {
+  font-family: "Croissantone";
+  src: url("../Polices/croissantone-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Devonshire";
+  src: url("../Polices/devonshire-regular.ttf");
+}
+
+@font-face {
+  font-family: "dancing";
+  src: url("../Polices/dancing script.ttf");
+}
+
+@font-face {
+  font-family: "kaushanscript";
+  src: url("../Polices/kaushanscript-regular.ttf");
+}
+
+@font-face {
+  font-family: "street";
+  src: url("../Polices/street.ttf");
 }
 
 @media screen and (max-width: 768px) {

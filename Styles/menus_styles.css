@@ -1,0 +1,30 @@
+.body_chic {
+  background-color: #fcdfdb;
+  font-family: "Devonshire";
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../Polices/Campton-BoldDEMO.otf");
+}
+
+@font-face {
+  font-family: "Croissantone";
+  src: url("../Polices/croissantone-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Devonshire";
+  src: url("../Polices/devonshire-regular.ttf");
+}
+
+@font-face {
+  font-family: "dancing";
+  src: url("../Polices/dancing script.ttf");
+}
+
+@font-face {
+  font-family: "kaushanscript";
+  src: url("../Polices/kaushanscript-regular.ttf");
+}
+/*# sourceMappingURL=menus_styles.css.map */
