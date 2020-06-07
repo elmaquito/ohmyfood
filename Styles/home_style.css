@@ -22,7 +22,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
 }
 
 a {
@@ -66,8 +65,8 @@ a:visited {
 .menus_left {
   margin-left: auto;
   margin-right: 20px;
-  height: 200px;
-  width: 150px;
+  height: 400px;
+  width: 250px;
   -webkit-box-shadow: 0px 0px 4px 0px lightgrey;
           box-shadow: 0px 0px 4px 0px lightgrey;
 }
@@ -75,8 +74,8 @@ a:visited {
 .menus_right {
   margin-right: auto;
   margin-left: 20px;
-  height: 200px;
-  width: 150px;
+  height: 400px;
+  width: 250px;
   -webkit-box-shadow: 0px 0px 4px 0px lightgrey;
           box-shadow: 0px 0px 4px 0px lightgrey;
 }
@@ -92,7 +91,6 @@ a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 220px;
   margin-bottom: 0px;
 }
 
@@ -107,11 +105,27 @@ a:visited {
   font-family: "street";
 }
 
-#la_note_enchantee {
+.menus_icon {
+  margin-top: 20px;
+}
+
+.body_note {
+  background-color: #fcdfdb;
+  font-family: "Devonshire";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.la_note_enchantee {
   background-color: #fbdcdb;
 }
 
-#la_note_enchantee h2 {
+.la_note_enchantee h2 {
   font-family: "Devonshire";
 }
 
@@ -119,7 +133,7 @@ a:visited {
   color: #4f252a;
 }
 
-#la_note_enchantee i {
+.la_note_enchantee i {
   color: #f04e5f;
   background: -webkit-linear-gradient(#f04e5f, #f6916a);
   -webkit-background-clip: text;

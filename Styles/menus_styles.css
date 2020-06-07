@@ -1,6 +1,12 @@
 .body_chic {
   background-color: #fcdfdb;
   font-family: "Devonshire";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @font-face {

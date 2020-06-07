@@ -21,7 +21,6 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    height:100%;
 }
 
 a {
@@ -51,16 +50,16 @@ a:visited {
 .menus_left {
     margin-left: auto;    
     margin-right: 20px;
-    height: 200px;
-    width: 150px;
+    height: 400px;
+    width: 250px;
     box-shadow: 0px 0px 4px 0px lightgrey;
 }
 
 .menus_right {
     margin-right: auto; 
     margin-left: 20px;   
-    height: 200px;
-    width: 150px;
+    height: 400px;
+    width: 250px;
     box-shadow: 0px 0px 4px 0px lightgrey;
 }
 
@@ -69,7 +68,6 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 220px;
     margin-bottom: 0px;
 }
 
@@ -84,23 +82,38 @@ a:visited {
     font-family: "street";
 }
 
-#la_note_enchantee {
+.menus_icon {
+    margin-top: 20px;
+}
+
+// note enchantée
+
+.body_note {
+    background-color: #fcdfdb;
+    font-family: "Devonshire";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.la_note_enchantee {
     background-color: #fbdcdb;
 }
-#la_note_enchantee h2{
+.la_note_enchantee h2{
     font-family: "Devonshire";
 }
 .la_note_enchantee_color{
     color: #4f252a;
 }
 
-#la_note_enchantee i{
+.la_note_enchantee i{
     color: #f04e5f;
     background: -webkit-linear-gradient(#f04e5f, #f6916a);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
 
+// chic à la française
 #chic_francaise {
     background-color: #fbf3fb;
     font-family: "Croissantone";
