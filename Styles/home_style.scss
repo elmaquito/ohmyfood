@@ -23,6 +23,12 @@ body {
     flex-direction: column;
 }
 
+.content a:hover{
+    width:240px;
+    height:370px;
+    opacity: 0.5;
+}
+
 a {
     color: inherit; 
     text-decoration: none;
@@ -68,7 +74,8 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .menus_title {
@@ -78,12 +85,71 @@ a:visited {
 }
 
 .menus_menus {
-    margin: 0px;
     font-family: "street";
 }
 
 .menus_icon {
     margin-top: 20px;
+}
+
+// .menu_header {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+.contenue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteneur_price {
+    font-weight: bold;
+}
+
+.menus_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 70px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.menus_footer span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.menus_footer span:after {
+    content: '\002E\002E\002E';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+#btn_main:hover span {
+    padding-right: 25px;
+}
+
+#btn_main:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.menus_footer i {
+    margin-right: 10px;
+}
+
+.menu_line {
+    opacity: 0;
+}
+
+.menu_header:hover img{
+    opacity: 1;
 }
 
 // note enchantée
@@ -113,7 +179,22 @@ a:visited {
         -webkit-text-fill-color: transparent;
 }
 
+.section_title {
+    display: inline;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
 // chic à la française
+
+.body_chic{
+    background-color: #fbf3fb;
+    font-family: "Croissantone";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 #chic_francaise {
     background-color: #fbf3fb;
     font-family: "Croissantone";
@@ -125,11 +206,32 @@ a:visited {
     background: -webkit-linear-gradient(left,#de8621, #905cff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    font-size: 10px;
+}
+
+.element1 {
+    color: #c67412;
+}
+
+.element2 {
+    color: #a56799;
+}
+
+.element3{
+    color: #7858cf;
+}
+// délices
+
+
+.body_delices{
+    background-color: #edefef;
+    font-family: "dancing";
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 #delices_papilles {
-    background-color: #f9f9f9;
+    background-color: #edefef;
     font-family: "dancing";
     color: #2897fb;
 }
@@ -139,6 +241,16 @@ a:visited {
     background: -webkit-linear-gradient(left,#0633df, #2897fb);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+}
+
+// Palette 
+
+.body_palette{
+    background-color: #fdfffc;
+    font-family: "kaushanscript";
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 #palette_gout {
@@ -194,6 +306,17 @@ footer {
     align-items: center;
 }
 
+footer a:hover {
+    -webkit-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 1000ms;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+}
+
 #mentions {
     justify-content: flex-start;
     margin-left: 10px;
@@ -213,7 +336,9 @@ footer {
 
 .centered {
     background-color: #F8BBD0;
+    width: 100%;
 }
+
 // header
 @font-face {
     font-family: "Campton";
@@ -257,4 +382,28 @@ footer {
     footer {
         width: 100%;
     }
+}
+
+@-webkit-keyframes wiggle {
+    0% {-webkit-transform: rotate(10deg);}
+    25% {-webkit-transform: rotate(-10deg);}
+    50% {-webkit-transform: rotate(20deg);}
+    75% {-webkit-transform: rotate(-5deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
+
+@-ms-keyframes wiggle {
+    0% {-ms-transform: rotate(1deg);}
+    25% {-ms-transform: rotate(-1deg);}
+    50% {-ms-transform: rotate(1.5deg);}
+    75% {-ms-transform: rotate(-5deg);}
+    100% {-ms-transform: rotate(0deg);}
+}
+  
+@keyframes wiggle {
+    0% {transform: rotate(10deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
 }
