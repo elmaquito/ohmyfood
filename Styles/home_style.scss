@@ -374,16 +374,40 @@ footer a:hover {
     src: url("../Polices/street.ttf");
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        width: 100%;
-        margin: 0;
+@media screen and (max-width: 480px) {
+    .rows {
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
     }
-    footer {
-        width: 100%;
+
+    .menus_left {
+        margin: 0px;
+    }
+
+    .menus_right {
+        margin: 0px;
+    }
+
+    .menus {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
+@media screen and (max-width: 540px) {
+    .contenue {
+        flex-direction: column;
+    }
+
+    .menu_header img{
+        display: none;
+    }
+
+    section{
+        margin-top: 30px;
+    }
+}
 @-webkit-keyframes wiggle {
     0% {-webkit-transform: rotate(10deg);}
     25% {-webkit-transform: rotate(-10deg);}

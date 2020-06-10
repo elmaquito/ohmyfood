@@ -424,13 +424,39 @@ footer a:hover {
   src: url("../Polices/street.ttf");
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-    margin: 0;
+@media screen and (max-width: 480px) {
+  .rows {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px;
+    margin: 0px;
   }
-  footer {
-    width: 100%;
+  .menus_left {
+    margin: 0px;
+  }
+  .menus_right {
+    margin: 0px;
+  }
+  .menus {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contenue {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu_header img {
+    display: none;
+  }
+  section {
+    margin-top: 30px;
   }
 }
 
