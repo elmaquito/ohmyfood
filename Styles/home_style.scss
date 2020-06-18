@@ -1,6 +1,25 @@
-// html 
+// Template 
 
-// Body 
+// Body
+ 
+// header 
+
+header {
+    background-color: #569C87;
+    font-family: Arial;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    color: #f1c74b;
+    font-size: 35px;
+    margin: auto;
+}
 
 body {
     width: 100%;
@@ -24,9 +43,8 @@ body {
 }
 
 .content a:hover{
-    width:240px;
-    height:370px;
     opacity: 0.5;
+    font-size: 21px;
 }
 
 a {
@@ -35,7 +53,7 @@ a {
 }
 
 a:visited {
-    color: none;
+    text-decoration: none;
 }
 
 .container{
@@ -45,6 +63,8 @@ a:visited {
     display: flex;
     flex-direction: column;
 }
+
+// main
 
 .menus {
     display: flex;
@@ -79,191 +99,15 @@ a:visited {
 }
 
 .menus_title {
-    font-size: 13px;
+    font-size: 20px;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
-.menus_menus {
+
+.menu {
     font-family: "street";
-}
-
-.menus_icon {
-    margin-top: 20px;
-}
-
-// .menu_header {
-//     display: flex;
-//     justify-content: space-between;
-// }
-
-.contenue {
-    display: flex;
-    justify-content: space-between;
-}
-
-.conteneur_price {
-    font-weight: bold;
-}
-
-.menus_footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 70px;
-    margin-top: 40px;
-    font-size: 20px;
-}
-
-.menus_footer span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-  
-.menus_footer span:after {
-    content: '\002E\002E\002E';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-  
-#btn_main:hover span {
-    padding-right: 25px;
-}
-
-#btn_main:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
-.menus_footer i {
-    margin-right: 10px;
-}
-
-.menu_line {
-    opacity: 0;
-}
-
-.menu_header:hover img{
-    opacity: 1;
-}
-
-// note enchantée
-
-.body_note {
-    background-color: #fcdfdb;
-    font-family: "Devonshire";
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.la_note_enchantee {
-    background-color: #fbdcdb;
-}
-.la_note_enchantee h2{
-    font-family: "Devonshire";
-}
-.la_note_enchantee_color{
-    color: #4f252a;
-}
-
-.la_note_enchantee i{
-    color: #f04e5f;
-    background: -webkit-linear-gradient(#f04e5f, #f6916a);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-}
-
-.section_title {
-    display: inline;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-
-// chic à la française
-
-.body_chic{
-    background-color: #fbf3fb;
-    font-family: "Croissantone";
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-#chic_francaise {
-    background-color: #fbf3fb;
-    font-family: "Croissantone";
-    color: #c77412;
-}
-
-.chic_francaise_color {
-    color: #de8621;
-    background: -webkit-linear-gradient(left,#de8621, #905cff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-}
-
-.element1 {
-    color: #c67412;
-}
-
-.element2 {
-    color: #a56799;
-}
-
-.element3{
-    color: #7858cf;
-}
-// délices
-
-
-.body_delices{
-    background-color: #edefef;
-    font-family: "dancing";
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-#delices_papilles {
-    background-color: #edefef;
-    font-family: "dancing";
-    color: #2897fb;
-}
-
-.delices_papilles_color {
-    color: #0633df;
-    background: -webkit-linear-gradient(left,#0633df, #2897fb);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-}
-
-// Palette 
-
-.body_palette{
-    background-color: #fdfffc;
-    font-family: "kaushanscript";
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-#palette_gout {
-    background-color: #fdfffc;
-    font-family: "kaushanscript";
-    color: #4ea043;
-}
-
-.palette_gout_color {
-    color: #4ea043;
-    background: -webkit-linear-gradient(left,#4ea043, #beff7f);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    font-size: 30px;
 }
 
 #btn_main{
@@ -275,24 +119,6 @@ a:visited {
     font-size: 16px;
 }
 
-// header 
-
-header {
-    background-color: #569C87;
-    font-family: Arial;
-    display: flex;
-    font-weight: bold;
-    justify-content: center;
-}
-
-#title {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    color: #f1c74b;
-    font-size: 35px;
-    margin: auto;
-}
 
 // footer
 
@@ -332,11 +158,179 @@ footer a:hover {
 .content_center {
     display: flex;
     margin: auto;
+    align-items: stretch;
+    flex: 1;
+    width: 100%;
 }
 
 .centered {
     background-color: #F8BBD0;
     width: 100%;
+}
+
+// Menus Template
+
+article {
+    margin-bottom: 80px;
+    width: 82%;
+}
+
+.contenue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteneur_price {
+    font-weight: bold;
+}
+
+.menu_header:hover .section_title{
+    text-decoration: underline;
+}
+
+.content_menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .section_title {
+        display: inline;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+
+section {
+    padding: 0px 30px 0px 30px;
+}
+
+.title {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.menus_menus {
+    font-family: "street";
+}
+
+// note enchantée
+
+.footer_div {
+    display: flex;
+    justify-content: center;
+}
+
+.body_note {
+    background-color: #fcdfdb;
+    font-family: "Devonshire";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.la_note_enchantee {
+    background-color: #fbdcdb;
+}
+.la_note_enchantee h2{
+    font-family: "Devonshire";
+}
+.la_note_enchantee_color{
+    color: #4f252a;
+}
+
+.la_note_enchantee i{
+    color: #f04e5f;
+    background: -webkit-linear-gradient(#f04e5f, #f6916a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.menus_icon {
+    margin-right: 10px;
+}
+// chic à la française
+
+.body_chic{
+    background-color: #fbf3fb;
+    font-family: "Croissantone";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#chic_francaise {
+    background-color: #fbf3fb;
+    font-family: "Croissantone";
+    color: #c77412;
+}
+
+.chic_francaise_color {
+    color: #de8621;
+    background: -webkit-linear-gradient(left,#de8621, #905cff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.element1 {
+    color: #c67412;
+}
+
+.element2 {
+    color: #a56799;
+}
+
+.element3{
+    color: #7858cf;
+}
+
+// délices
+
+.body_delices{
+    background-color: #edefef;
+    font-family: "dancing";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#delices_papilles {
+    background-color: #edefef;
+    font-family: "dancing";
+    color: #2897fb;
+}
+
+.delices_papilles_color {
+    color: #0633df;
+    background: -webkit-linear-gradient(left,#0633df, #2897fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+// Palette 
+
+.body_palette{
+    background-color: #fdfffc;
+    font-family: "kaushanscript";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#palette_gout {
+    background-color: #fdfffc;
+    font-family: "kaushanscript";
+    color: #4ea043;
+}
+
+.palette_gout_color {
+    color: #4ea043;
+    background: -webkit-linear-gradient(left,#4ea043, #beff7f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 // header
@@ -374,7 +368,13 @@ footer a:hover {
     src: url("../Polices/street.ttf");
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 950px) {
+    article {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 789px) {
     .rows {
         flex-direction: column;
         padding: 0px;
@@ -395,7 +395,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 789px) {
     .contenue {
         flex-direction: column;
     }
@@ -408,6 +408,7 @@ footer a:hover {
         margin-top: 30px;
     }
 }
+
 @-webkit-keyframes wiggle {
     0% {-webkit-transform: rotate(10deg);}
     25% {-webkit-transform: rotate(-10deg);}
@@ -430,4 +431,70 @@ footer a:hover {
     50% {transform: rotate(20deg);}
     75% {transform: rotate(-5deg);}
     100% {transform: rotate(0deg);}
+}
+
+@keyframes blink {
+    /**
+     * At the start of the animation the dot
+     * has an opacity of .2
+     */
+    0% {
+      opacity: .2;
+    }
+    /**
+     * At 20% the dot is fully visible and
+     * then fades out slowly
+     */
+    20% {
+      opacity: 1;
+    }
+    /**
+     * Until it reaches an opacity of .2 and
+     * the animation can start again
+     */
+    100% {
+      opacity: .2;
+    }
+}
+
+.prochainement span {
+    /**
+     * Use the blink animation, which is defined above
+     */
+    animation-name: blink;
+    /**
+     * The animation should take 1.4 seconds
+     */
+    animation-duration: 1.4s;
+    /**
+     * It will repeat itself forever
+     */
+    animation-iteration-count: infinite;
+    /**
+     * This makes sure that the starting style (opacity: .2)
+     * of the animation is applied before the animation starts.
+     * Otherwise we would see a short flash or would have
+     * to set the default styling of the dots to the same
+     * as the animation. Same applies for the ending styles.
+     */
+    animation-fill-mode: both;
+    margin-left: 3px;
+}
+
+.prochainement span:nth-child(2) {
+    /**
+     * Starts the animation of the third dot
+     * with a delay of .2s, otherwise all dots
+     * would animate at the same time
+     */
+    animation-delay: .2s;
+}
+
+.prochainement span:nth-child(3) {
+    /**
+     * Starts the animation of the third dot
+     * with a delay of .4s, otherwise all dots
+     * would animate at the same time
+     */
+    animation-delay: .4s;
 }

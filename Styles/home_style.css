@@ -1,3 +1,28 @@
+header {
+  background-color: #569C87;
+  font-family: Arial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  color: #f1c74b;
+  font-size: 35px;
+  margin: auto;
+}
+
 body {
   width: 100%;
   margin-left: auto;
@@ -25,9 +50,8 @@ body {
 }
 
 .content a:hover {
-  width: 240px;
-  height: 370px;
   opacity: 0.5;
+  font-size: 21px;
 }
 
 a {
@@ -36,7 +60,7 @@ a {
 }
 
 a:visited {
-  color: none;
+  text-decoration: none;
 }
 
 .container {
@@ -102,209 +126,14 @@ a:visited {
 }
 
 .menus_title {
-  font-size: 13px;
+  font-size: 20px;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
-.menus_menus {
+.menu {
   font-family: "street";
-}
-
-.menus_icon {
-  margin-top: 20px;
-}
-
-.contenue {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.conteneur_price {
-  font-weight: bold;
-}
-
-.menus_footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 70px;
-  margin-top: 40px;
-  font-size: 20px;
-}
-
-.menus_footer span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.menus_footer span:after {
-  content: '\002E\002E\002E';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#btn_main:hover span {
-  padding-right: 25px;
-}
-
-#btn_main:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.menus_footer i {
-  margin-right: 10px;
-}
-
-.menu_line {
-  opacity: 0;
-}
-
-.menu_header:hover img {
-  opacity: 1;
-}
-
-.body_note {
-  background-color: #fcdfdb;
-  font-family: "Devonshire";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-.la_note_enchantee {
-  background-color: #fbdcdb;
-}
-
-.la_note_enchantee h2 {
-  font-family: "Devonshire";
-}
-
-.la_note_enchantee_color {
-  color: #4f252a;
-}
-
-.la_note_enchantee i {
-  color: #f04e5f;
-  background: -webkit-linear-gradient(#f04e5f, #f6916a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.section_title {
-  display: inline;
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-.body_chic {
-  background-color: #fbf3fb;
-  font-family: "Croissantone";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-#chic_francaise {
-  background-color: #fbf3fb;
-  font-family: "Croissantone";
-  color: #c77412;
-}
-
-.chic_francaise_color {
-  color: #de8621;
-  background: -webkit-linear-gradient(left, #de8621, #905cff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.element1 {
-  color: #c67412;
-}
-
-.element2 {
-  color: #a56799;
-}
-
-.element3 {
-  color: #7858cf;
-}
-
-.body_delices {
-  background-color: #edefef;
-  font-family: "dancing";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-#delices_papilles {
-  background-color: #edefef;
-  font-family: "dancing";
-  color: #2897fb;
-}
-
-.delices_papilles_color {
-  color: #0633df;
-  background: -webkit-linear-gradient(left, #0633df, #2897fb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.body_palette {
-  background-color: #fdfffc;
-  font-family: "kaushanscript";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-#palette_gout {
-  background-color: #fdfffc;
-  font-family: "kaushanscript";
-  color: #4ea043;
-}
-
-.palette_gout_color {
-  color: #4ea043;
-  background: -webkit-linear-gradient(left, #4ea043, #beff7f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 30px;
 }
 
 #btn_main {
@@ -314,31 +143,6 @@ a:visited {
   border-radius: 6px;
   border: 0px;
   font-size: 16px;
-}
-
-header {
-  background-color: #569C87;
-  font-family: Arial;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100px;
-  color: #f1c74b;
-  font-size: 35px;
-  margin: auto;
 }
 
 footer {
@@ -387,11 +191,222 @@ footer a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
 }
 
 .centered {
   background-color: #F8BBD0;
   width: 100%;
+}
+
+article {
+  margin-bottom: 80px;
+  width: 82%;
+}
+
+.contenue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.conteneur_price {
+  font-weight: bold;
+}
+
+.menu_header:hover .section_title {
+  text-decoration: underline;
+}
+
+.content_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content_menu .section_title {
+  display: inline;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+section {
+  padding: 0px 30px 0px 30px;
+}
+
+.title {
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.menus_menus {
+  font-family: "street";
+}
+
+.footer_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body_note {
+  background-color: #fcdfdb;
+  font-family: "Devonshire";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.la_note_enchantee {
+  background-color: #fbdcdb;
+}
+
+.la_note_enchantee h2 {
+  font-family: "Devonshire";
+}
+
+.la_note_enchantee_color {
+  color: #4f252a;
+}
+
+.la_note_enchantee i {
+  color: #f04e5f;
+  background: -webkit-linear-gradient(#f04e5f, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menus_icon {
+  margin-right: 10px;
+}
+
+.body_chic {
+  background-color: #fbf3fb;
+  font-family: "Croissantone";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#chic_francaise {
+  background-color: #fbf3fb;
+  font-family: "Croissantone";
+  color: #c77412;
+}
+
+.chic_francaise_color {
+  color: #de8621;
+  background: -webkit-linear-gradient(left, #de8621, #905cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.element1 {
+  color: #c67412;
+}
+
+.element2 {
+  color: #a56799;
+}
+
+.element3 {
+  color: #7858cf;
+}
+
+.body_delices {
+  background-color: #edefef;
+  font-family: "dancing";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#delices_papilles {
+  background-color: #edefef;
+  font-family: "dancing";
+  color: #2897fb;
+}
+
+.delices_papilles_color {
+  color: #0633df;
+  background: -webkit-linear-gradient(left, #0633df, #2897fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.body_palette {
+  background-color: #fdfffc;
+  font-family: "kaushanscript";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#palette_gout {
+  background-color: #fdfffc;
+  font-family: "kaushanscript";
+  color: #4ea043;
+}
+
+.palette_gout_color {
+  color: #4ea043;
+  background: -webkit-linear-gradient(left, #4ea043, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @font-face {
@@ -424,7 +439,13 @@ footer a:hover {
   src: url("../Polices/street.ttf");
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 950px) {
+  article {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 789px) {
   .rows {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -445,7 +466,7 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 789px) {
   .contenue {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -499,5 +520,101 @@ footer a:hover {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
+}
+
+@-webkit-keyframes blink {
+  /**
+     * At the start of the animation the dot
+     * has an opacity of .2
+     */
+  0% {
+    opacity: .2;
+  }
+  /**
+     * At 20% the dot is fully visible and
+     * then fades out slowly
+     */
+  20% {
+    opacity: 1;
+  }
+  /**
+     * Until it reaches an opacity of .2 and
+     * the animation can start again
+     */
+  100% {
+    opacity: .2;
+  }
+}
+
+@keyframes blink {
+  /**
+     * At the start of the animation the dot
+     * has an opacity of .2
+     */
+  0% {
+    opacity: .2;
+  }
+  /**
+     * At 20% the dot is fully visible and
+     * then fades out slowly
+     */
+  20% {
+    opacity: 1;
+  }
+  /**
+     * Until it reaches an opacity of .2 and
+     * the animation can start again
+     */
+  100% {
+    opacity: .2;
+  }
+}
+
+.prochainement span {
+  /**
+     * Use the blink animation, which is defined above
+     */
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  /**
+     * The animation should take 1.4 seconds
+     */
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  /**
+     * It will repeat itself forever
+     */
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  /**
+     * This makes sure that the starting style (opacity: .2)
+     * of the animation is applied before the animation starts.
+     * Otherwise we would see a short flash or would have
+     * to set the default styling of the dots to the same
+     * as the animation. Same applies for the ending styles.
+     */
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  margin-left: 3px;
+}
+
+.prochainement span:nth-child(2) {
+  /**
+     * Starts the animation of the third dot
+     * with a delay of .2s, otherwise all dots
+     * would animate at the same time
+     */
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.prochainement span:nth-child(3) {
+  /**
+     * Starts the animation of the third dot
+     * with a delay of .4s, otherwise all dots
+     * would animate at the same time
+     */
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 /*# sourceMappingURL=home_style.css.map */
